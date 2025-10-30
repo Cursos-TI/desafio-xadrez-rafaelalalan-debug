@@ -1,32 +1,63 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+#define MAX_DIRECOES 4;
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+const int cima = 1;
+const int baixo = 2;
+const int esquerda = 3;
+const int direita = 4;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    int main () {
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+        int direcao; 
+        int 1;
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+        printf ("==== estrutura For==== \n");
+        for (i = 1; i <=MAX_DIRECOES; 1++); {
+            direcao = 1;
+            switch (direcao)
+            {
+            case 1: printf("cima /n"); break;
+            case 2: printf("baixo /n"); break;
+            case 3: printf ("direita /n");break;
+            case 4: printf ("esquerda /n");break;
+            default: printf ("direcao desconhecida /n");break;
+            }
+        }
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+        printf ("\n==== estrutura While==== /n");
+        i = 1; 
+        while (i <= MAX_DIRECOES)
+        direcao = i;
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+        switch (direcao)
+        {
+        case 1: printf ("cima /n");break;
+        case 2: printf ("baixo /n"); break;
+        case 3: printf ("direita /n"); break;
+        case 4: printf ("esquerda /n"); break;
+                
+        }
+        i++;
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+        printf ("n==== estrutura do while ====/n");
+        i=1;
+        do
+        direcao = i;
+        switch (direcao){
+        case 1: printf ("cima /n");break;
+        case 2: printf ("baixo /n");break;
+        case 3: printf ("direita /n"); break;
+        case 4: printf ("esquerda /n"); break;
+        
+        
+        }
+        
+        i++;
+        } while (1 <MAX_DIRECOES);
 
-    return 0;
-}
+        printf ("n/fim da execução. /n");
+
+
+        
+        return 0;
